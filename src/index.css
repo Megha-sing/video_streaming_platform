@@ -16,7 +16,6 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 113, 113);
   border-radius: 10px;
   height: 200px;
 }
@@ -25,13 +24,18 @@ a {
   background-color: transparent;
 }
 
+
 .category-btn:hover {
-  background-color: #afa9a8 !important;
-  color: white !important;
+  color: black !important;
+  transform: scale(1.5);
 }
 
 .category-btn:hover span{
-  color: white !important;
+  color: #ffc300 !important;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
 }
 
 .react-player {
@@ -55,10 +59,9 @@ a {
   background: transparent;
   outline: none;
   border: none;
-
   padding: 7px 15px;
-  margin: 10px 0px;
-  border-radius: 20px;
+  margin: 10px ;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 
@@ -67,16 +70,9 @@ a {
     margin: 10px;
   }
 }
-
-@media screen and (max-width:800px){
-  .copyright{
-    display:none !important;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
-    overflow: auto !important;
+    overflow:auto !important;
   }
 
   .react-player {

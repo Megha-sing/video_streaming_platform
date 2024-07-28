@@ -8,7 +8,7 @@ const Videos = ({ videos}) => {
   return (
     <Stack direction="row" 
     flexWrap="wrap" 
-    justifyContent="start" 
+    justifyContent="space-evenly" 
     alignItems="start" 
     gap={2}>
       {Array.isArray(videos) && (videos)?.map((item, idx) => (

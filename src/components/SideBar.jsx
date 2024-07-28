@@ -16,13 +16,14 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
       <button
         className="category-btn"
         onClick={() => setSelectedCategory(category.name)}
+        //if selected category name then color
         style={{
-          background: category.name === selectedCategory && "#afa9a8",
-          color: "white",
+          background: category.name === selectedCategory ,
+          color: "black",
         }}
         key={category.name}
       >
-        <span style={{ color: category.name === selectedCategory ? "white" : "white", marginRight: "15px" }}>
+        <span style={{ color: category.name === selectedCategory ? "black" : "black", marginRight: "15px" }}>
           {category.icon}
         </span>
         <span style={{ opacity: category.name === selectedCategory ? "1" : "0.8" }}>
